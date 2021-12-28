@@ -1,4 +1,4 @@
-package com.example.reactnativewlhypluginmodule;
+package com.ynrh.rhs;
 
 import com.facebook.react.ReactActivity;
 

@@ -1,4 +1,4 @@
-package com.example.reactnativewlhypluginmodule;
+package com.ynrh.rhs;
 
 import android.app.Application;
 import android.content.Context;
@@ -11,6 +11,7 @@ import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 import com.reactnativewlhypluginmodule.WlhypluginModulePackage;
+import com.reactnativewlhypluginmodule.WlhypluginModuleModule;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -45,6 +46,7 @@ public class MainApplication extends Application implements ReactApplication {
   @Override
   public void onCreate() {
     super.onCreate();
+    WlhypluginModuleModule.init(this);
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager()); // Remove this line if you don't want Flipper enabled
   }
